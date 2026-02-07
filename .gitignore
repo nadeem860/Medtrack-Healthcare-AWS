@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+medtrack_env/
+*.pyc
+
+# Flask
+instance/
+.webassets-cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Kiro (development only)
+.kiro/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables (NEVER commit these!)
+.env
+.env.local
+.env.production
+*.env
+
+# Logs
+*.log
+logs/
+
+# AWS Credentials (NEVER commit these!)
+.aws/
+*.pem
+*.key
+
+# Elastic Beanstalk
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
