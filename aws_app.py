@@ -27,7 +27,7 @@ if USE_AWS:
     medical_records_table = dynamodb.Table(os.environ.get('RECORDS_TABLE', 'MedTrack_MedicalRecords'))
     
     # SNS Topic ARN (optional)
-    SNS_TOPIC_ARN = os.environ.get('SNS_TOPIC_ARN', '')
+    SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:481665113061:MedTrack'
 else:
     # Fallback to in-memory storage for local development
     users = {}
@@ -450,3 +450,4 @@ if __name__ == '__main__':
         host='0.0.0.0',
         port=port
     )
+
